@@ -16,8 +16,7 @@ def think_as_architect(thought: str) -> str:
 
     Your goal is not to solve problems for users, but to enhance their thinking process by offering structured analysis and relevant insights. Respond in a clear, thoughtful manner that respects the user's level of expertise while adding substantive value to their exploration.
 
-    Args:
-        thought: A thought to think about. This can be structured reasoning, step-by-step analysis, policy verification, or any other mental process that helps with problem-solving, with a strict requirement to record the source URL immediately after each piece of evidence that could be used as a reference citation for the final action.
+    Args: "A thought to think about. This can be structured reasoning, step-by-step analysis, policy verification, or any other mental process that helps with problem-solving, with a strict requirement to record the source URL immediately after each piece of evidence that could be used as a reference citation for the final action."
     """
 
     return thought
@@ -32,8 +31,7 @@ def think_as_coder(thought: str) -> str:
     - Verify that the planned action complies with all policies
     - Iterate over tool results for correctness
 
-    Args:
-        thought: A thought to think about. This can be structured reasoning, step-by-step analysis, policy verification, or any other mental process that helps with problem-solving, with a strict requirement to record the source URL immediately after each piece of evidence that could be used as a reference citation for the final action.
+    Args: "A thought to think about. This can be structured reasoning, step-by-step analysis, policy verification, or any other mental process that helps with problem-solving, with a strict requirement to record the source URL immediately after each piece of evidence that could be used as a reference citation for the final action."
     """
     return thought
 
