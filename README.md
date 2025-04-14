@@ -31,8 +31,27 @@ and add `mcp.json` to your mcp config like this:
 }
 ```
 
+use docker:
+
+```
+{
+  "mcpServers": {
+    "mcp-think-as-docker": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/ktrysmt/mcp-think-as"
+      ]
+    }
+  }
+}
+```
+
 ## Reference
 
 * <https://www.anthropic.com/engineering/claude-think-tool>
 * <https://github.com/PhillipRt/think-mcp-server>
 * <https://github.com/TechNavii/mcp_think>
+* <https://docs.astral.sh/uv/guides/integration/docker/#installing-uv>
