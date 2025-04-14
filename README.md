@@ -1,11 +1,13 @@
 # MCP Think As
 
-## Prerequisites
+## Configure
+
+### run with rv
+
+prerequisites
 
 - python: e.g. `mise install python@3.13 && mise use python@3.13 -g`
 - uv: e.g. `brew install uv`
-
-## Configure
 
 ```
 git clone https://github.com/ktrysmt/mcp-think-as
@@ -31,7 +33,7 @@ and add `mcp.json` to your mcp config like this:
 }
 ```
 
-use docker:
+### run with docker
 
 ```
 {
