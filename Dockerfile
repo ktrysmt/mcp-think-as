@@ -1,17 +1,10 @@
-# ベースイメージ
 FROM python:3.13-slim
 
-# 作業ディレクトリ作成
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+ADD . /app
+
 WORKDIR /app
+RUN uv sync --frozen
 
-# 依存ファイルコピー
-COPY pyproject.toml uv.lock ./
-
-# uvで依存インストール
-RUN pip install uv && uv pip install --system
-
-# アプリケーションコードコピー
-COPY . .
-
-# エントリポイント
-CMD ["python", "main.py"]
+CMD ["uv", "run", "main.py"]
