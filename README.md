@@ -2,7 +2,7 @@
 
 ## Configure
 
-### run with rv
+### run with uv
 
 prerequisites
 
