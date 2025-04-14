@@ -42,7 +42,7 @@ use docker:
         "run",
         "-i",
         "--rm",
-        "ghcr.io/ktrysmt/mcp-think-as"
+        "ghcr.io/ktrysmt/mcp-think-as:latest"
       ]
     }
   }
