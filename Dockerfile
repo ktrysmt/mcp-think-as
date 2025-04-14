@@ -8,7 +8,7 @@ WORKDIR /app
 COPY pyproject.toml uv.lock ./
 
 # uvで依存インストール
-RUN pip install uv && uv pip install --system --require-hashes -r <(uv pip compile --quiet pyproject.toml)
+RUN pip install uv && uv pip install --system
 
 # アプリケーションコードコピー
 COPY . .
